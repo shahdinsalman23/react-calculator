@@ -5,7 +5,7 @@ const Calculator = () => {
     <>
         <section className={styles.calculator}>
             <div className={styles.container}>
-                <h1>Calcultor</h1>
+                <h1>Calculator</h1>
                 <div className={styles.inputfield}>
                     <input type="text" name="value" id="value" />
                     <button>C</button>
