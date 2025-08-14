@@ -1,10 +1,16 @@
-import React from 'react'
+import styles from './Calculator.module.css'
 
 const Calculator = () => {
   return (
     <>
-        <section className="calculator">
-            <div></div>
+        <section className={styles.calculator}>
+            <div className={styles.container}>
+                <h1>Calcultor</h1>
+                <div className={styles.inputfield}>
+                    <input type="text" name="value" id="value" />
+                    <button>C</button>
+                </div>
+            </div>
         </section>
     </>
   )
