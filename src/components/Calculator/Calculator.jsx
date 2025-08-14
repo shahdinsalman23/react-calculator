@@ -2,7 +2,7 @@ import styles from './Calculator.module.css'
 
 const Calculator = () => {
 
-    const buttonNames = ['C', '1', '2', '+', '3', '4', '-', '5', '6', '*', '7', '8', '=', '9', '0', '.',]
+    const buttonNames = ['C', '1', '2', '3', '+', '4', '-', '5', '6', '*', '7', '8', '=', '9', '0', '.',]
 
     return (
         <>
@@ -11,7 +11,7 @@ const Calculator = () => {
                     <h1>Calculator</h1>
                     <div className={styles.inputfield}>
                         <input type="text" name="value" id="value" />
-                        <button className={styles.clearbtn}>C</button>
+                        {/* <button className={styles.clearbtn}>C</button> */}
                     </div>
                     <div className={styles.buttonContainer}>
                         {buttonNames.map((btn) => (
