@@ -40,3 +40,10 @@
     background: #000;
     font-size: 14px;
 }
+
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
