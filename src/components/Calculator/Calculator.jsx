@@ -1,6 +1,9 @@
 import styles from './Calculator.module.css'
 
 const Calculator = () => {
+
+    const buttonNames = ['','','','','','','','','','','','', ]
+    
   return (
     <>
         <section className={styles.calculator}>
