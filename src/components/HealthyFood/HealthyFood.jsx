@@ -23,7 +23,7 @@ const HealthyFood = () => {
                 <h1 className='heading'>Healthy Foods</h1>
                 <FoodInput handleKeyDown={onKeyDown} />
                 <ErrorMessage items={foodItems} />
-                <FoodItems items={foodItems} bought={activeItems.includes(foodItems)}/>
+                <FoodItems items={foodItems} />
             </Container>
         </>
     )

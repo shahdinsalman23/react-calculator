@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 import Item from './Item'
 
-const FoodItems = ({ items, bought }) => {
+const FoodItems = ({ items }) => {
 
         const [activeItems, setActiveItems] = useState([])
 
-        const onBuyButton = (e) => {
-
+        const onBuyButton = (item) => {
+            let newItems = [...activeItems, item]
+            setActiveItems(newItems)
         }
 
     return (
         <ul>
             {items.map((item) => (
-               <Item  key={item} foodItem={item} handlebuyButton={} />
+               <Item  key={item} bought={activeItems.includes(item)} foodItem={item} handlebuyButton={(e) => onBuyButton(item, e)} />
             ))}
         </ul>
     )
