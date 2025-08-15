@@ -1,0 +1,81 @@
+.todoapp {
+    margin: 50px;
+    width: 50%;
+    min-width: 500px;
+}
+
+.todoapp ul {
+    margin: 10px 0px 0px 0px;
+}
+
+.todoapp ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border: 1px solid #00000040;
+    border-radius: 5px;
+    margin: 0px 0px 20px 0px;
+}
+
+.todoapp ul li h6 {
+    font-size: 16px;
+    font-family: 'DM Sans Merlin';
+    font-weight: 500;
+}
+
+.addtodo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 20px 0px;
+}
+
+.addtodo input {
+    width: 30%;
+    padding: 7px 10px;
+    border: 1px solid #0000003d;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'DM Sans Merlin';
+}
+
+.addtodo input:focus {
+    outline: none;
+}
+
+.addTodoBtn {
+    background-color: darkseagreen;
+    padding: 8px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'DM Sans Merlin';
+    cursor: pointer;
+}
+
+.addTodoBtn:focus {
+    outline: none;
+}
+
+.delTodoBtn {
+    background-color: #ff6161;
+    padding: 8px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'DM Sans Merlin';
+    cursor: pointer;
+}
+
+.delTodoBtn:focus {
+    outline: none;
+}
+
+
+.welcomeMessage {
+    margin: 0px 0px 20px 0px;
+    font-size: 22px;
+    font-family: cursive;
+}
