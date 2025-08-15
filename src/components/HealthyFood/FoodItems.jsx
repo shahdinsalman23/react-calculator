@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Item from './Item'
 
-const FoodItems = ({ items }) => {
+const FoodItems = ({ items, bought }) => {
+
+        const [activeItems, setActiveItems] = useState([])
+
+        const onBuyButton = (e) => {
+
+        }
+
     return (
         <ul>
-            {items.map((item) => {
-                <li className='list-item' key={item}>
-                    <span>{item}</span>
-                    <button onClick={() => console.log(`${item} bought`)}>buy</button>
-                </li>
-            })}
+            {items.map((item) => (
+               <Item  key={item} foodItem={item} handlebuyButton={} />
+            ))}
         </ul>
     )
 }

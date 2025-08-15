@@ -8,6 +8,7 @@ const HealthyFood = () => {
 
     const [foodItems, setFoodItems] = useState(['Salad', 'Tikka', 'Raita'])
 
+
     const onKeyDown = (e) => {
         if (e.key === "Enter") {
             let newFoodItems = e.target.value
@@ -19,10 +20,10 @@ const HealthyFood = () => {
     return (
         <>
             <Container>
-                <h1>Healthy Foods</h1>
+                <h1 className='heading'>Healthy Foods</h1>
                 <FoodInput handleKeyDown={onKeyDown} />
                 <ErrorMessage items={foodItems} />
-                <FoodItems items={foodItems} />
+                <FoodItems items={foodItems} bought={activeItems.includes(foodItems)}/>
             </Container>
         </>
     )

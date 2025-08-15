@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,9 +8,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid #00000047;
+}
+
+.list-item span {
+    font-family: 'DM Sans Merlin';
+    font-size: 16px;
+}
+
+.active {
+    background-color: rgb(11, 62, 110);
+    color: #fff;
 }
 
 .input-field {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'DM Sans Merlin';
+    border-radius: 5px;
+    border: 1px solid #00000047;
+}
+
+.heading {
+    margin: 0px 0px 10px 0px;
+    font-family: 'DM Sans Merlin';
+}
+
+.button-buy {
+    padding: 4px 8px;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #ffff;
+    border-radius: 4px;
+    font-family: 'DM Sans Merlin';
 }
