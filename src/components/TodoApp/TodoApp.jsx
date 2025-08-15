@@ -14,13 +14,18 @@ const TodoApp = () => {
         setTodoItems(newTodoItems)
     }
 
+    const handleDeleteItem = (todoItemName) => {
+        let deleteTodoItem = todoItems.filter(item => item.name !== todoItemName.name)
+        setTodoItems(deleteTodoItem);
+    }
+
     return (
         <>
 
             <section className={styles.todoapp}>
                 <AddTodo  onNewitem={handleNewItem} />
                 {todoItems.length === 0 &&  <WelccomeMessage/>}
-                <TodoItem todoItems={todoItems} />
+                <TodoItem todoItems={todoItems} onDeleteClick={handleDeleteItem} />
             </section>
         </>
     )

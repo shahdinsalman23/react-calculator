@@ -1,6 +1,6 @@
 import styles from './Todoapp.module.css'
 
-const TodoItems = ({ todoItems }) => {
+const TodoItems = ({ todoItems, onDeleteClick }) => {
   return (
     <>
       <ul>
@@ -8,7 +8,7 @@ const TodoItems = ({ todoItems }) => {
           <li key={index}>
               <h6>{item.name}</h6>
               <h6>{item.dueDate}</h6>
-              <button className={styles.delTodoBtn}>Delete</button>
+              <button className={styles.delTodoBtn} onClick={() => onDeleteClick(item)}>Delete</button>
           </li>
         ))}
       </ul>
