@@ -59,3 +59,23 @@
     outline: none;
 }
 
+.delTodoBtn {
+    background-color: #ff6161;
+    padding: 8px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'DM Sans Merlin';
+    cursor: pointer;
+}
+
+.delTodoBtn:focus {
+    outline: none;
+}
+
+
+.welcomeMessage {
+    margin: 0px 0px 20px 0px;
+    font-size: 22px;
+    font-family: cursive;
+}
