@@ -20,6 +20,8 @@ const AddTodo = ({ onNewitem }) => {
         setDueDate("")
     }
 
+    
+
   return (
     <div className={styles.addtodo}>
         <input type="text" value={todoName}  onChange={handleNameChange} />
