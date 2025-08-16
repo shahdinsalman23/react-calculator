@@ -3,22 +3,7 @@ import styles from './Todoapp.module.css'
 
 const AddTodo = ({ onNewitem }) => {
 
-    const [todoName, setTodoName] = useState("")
-    const [dueDate, setDueDate] = useState("")
-
-    const handleNameChange = (e) =>  {
-        setTodoName(e.target.value)
-    }
-
-    const handleDateChange = (e) =>  {
-        setDueDate(e.target.value)
-    }
-
-    const handleAddButtonClicked = () => {
-        onNewitem(todoName, dueDate)
-        setTodoName("")
-        setDueDate("")
-    }
+   
 
 
   return (
