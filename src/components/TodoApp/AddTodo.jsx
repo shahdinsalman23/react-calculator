@@ -14,7 +14,11 @@ const AddTodo = ({ onNewitem }) => {
         setDueDate(e.target.value)
     }
 
-   
+    const handleAddButtonClicked = () => {
+        onNewitem(todoName, dueDate)
+        setTodoName("")
+        setDueDate("")
+    }
 
 
   return (
