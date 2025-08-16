@@ -19,6 +19,7 @@ const AddTodo = ({ onNewitem }) => {
         setTodoName("")
         setDueDate("")
     }
+    
 
   return (
     <div className={styles.addtodo}>
