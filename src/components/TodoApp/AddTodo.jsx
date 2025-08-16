@@ -20,7 +20,6 @@ const AddTodo = ({ onNewitem }) => {
         setDueDate("")
     }
 
-    
 
   return (
     <div className={styles.addtodo}>
