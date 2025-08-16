@@ -24,7 +24,7 @@ const TodoApp = () => {
 
             <section className={styles.todoapp}>
                 <AddTodo  onNewitem={handleNewItem} />
-                {todoItems.length === 0 &&  <WelccomeMessage/>}
+                <WelccomeMessage todoItems={todoItems} />
                 <TodoItem todoItems={todoItems} onDeleteClick={handleDeleteItem} />
             </section>
         </>

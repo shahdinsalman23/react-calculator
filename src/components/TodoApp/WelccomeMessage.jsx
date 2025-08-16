@@ -1,8 +1,8 @@
 import styles from './Todoapp.module.css'
 
-const WelccomeMessage = () => {
+const WelccomeMessage = ({ todoItems }) => {
   return (
-    <h4 className={styles.welcomeMessage}>Enjoy your day</h4>
+    todoItems.length === 0 &&  <h4 className={styles.welcomeMessage}>Enjoy your day</h4>
   )
 }
 
