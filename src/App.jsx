@@ -9,8 +9,6 @@ const App = () => {
       <Calculator/>
       {/* <HealthyFood/> */}
       {/* <TodoApp/> */}
-
-
    </>
   )
 }
